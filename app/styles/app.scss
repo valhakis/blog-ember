@@ -1,0 +1,65 @@
+$defaultBorder: 1px solid rgba(0, 0, 0, 0.3);
+
+body {
+   padding-top: 50px;
+   h1 {
+      font-size: 23px;
+      border-radius: 2px;
+      margin: 0px;
+      padding: 0px;
+   }
+}
+
+div#main {
+   > h1 {
+      background-color: #ccc;
+      padding: 3px;
+      margin: 5px 0px;
+      border: 1px solid #aaa;
+      color: #222;
+   }
+}
+
+div.section {
+   border: $defaultBorder;
+   background-color: #eee;
+   padding: 5px;
+   margin-bottom: 10px;
+   > h2 {
+      background-color: #ddd;
+      padding: 4px;
+      margin: 0px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      border: 1px solid rgba(200, 200, 200, 0.3);
+   }
+   h2 {
+      font-size: 20px;
+   }
+   .well {
+      h2 {
+         margin: 0px;
+         padding: 0px;
+      }
+      p {
+         margin: 0px;
+         padding: 0px;
+      }
+      padding: 5px;
+   }
+}
+
+.list-of-posts {
+   > h2 {
+      border: 1px solid #999;
+      padding: 3px;
+      background-color: #ddd;
+      border-radius: 3px;
+      color: #333;
+   }
+   .post {
+      h2 {
+         border: none;
+      }
+   }
+}

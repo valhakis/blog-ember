@@ -4,7 +4,19 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+     sassOptions: {
+        includePaths: [
+           'bower_components/bootstrap-sass/assets/stylesheets/'
+        ]
+     },
+     outputPaths: {
+        app: {
+           css: {
+              //'app': '/assets/application.css',
+              //'themes/alpha': '/assets/themes/alpha.css'
+           }
+        }
+     }
   });
 
   // Use `app.import` to add additional libraries to the generated
